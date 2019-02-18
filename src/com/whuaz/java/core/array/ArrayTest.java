@@ -15,6 +15,15 @@ public class ArrayTest {
         array.insert(3, 9);
         array.insert(3, 10);
         array.printAll();
+
+
+        GenericArray<Integer> genericArray = new GenericArray<>(5);
+        genericArray.add(0, 10);
+        genericArray.add(1, 100);
+        System.out.println(genericArray.count());
+        System.out.println(genericArray.getCapacity());
+//        System.out.println(genericArray.remove(0));
+        System.out.println(genericArray.toString());
     }
 
     // 定义整形数据data保存数据
